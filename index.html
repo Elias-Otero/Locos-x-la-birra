@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Locos x la Birra</title>
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<header id="header" class="header">
+    <div class="container abrir">
+        <div class="row">
+            <div class="four columns">
+                
+                
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                            <img src="img/cart.png" id="img-carrito">
+                            <span class="badge badge-dark" id="numero-carrito">0</span>
+                            <div id="carrito">
+                                    
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th>Cantidad</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+    </header>
+
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                    <div class="six columns">
+                        <div class="contenido-hero">
+                                <h2><mark>Busca tu Cerveza favorita!</mark></h2>
+                                <form action="#" id="busqueda" method="post" class="formulario">
+                                    <input class="u-full-width" type="text" placeholder="¿Que te gustaría Tomar?" id="buscador">
+                                    <input type="submit" id="submit-buscador" class="submit-buscador">
+                                </form>
+                        </div>
+                    </div>
+            </div> 
+        </div>
+    </div>
+
+     <div id="lista-cursos" class="container">
+        <h1 id="encabezado" class="encabezado"><mark>Cervezas Disponibles</mark></h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/ig.webp" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Cerveza Imperial Golden 710ml</h4>
+                        <p class="precio ">$380  <span class="u-pull-right ">$350</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/il.webp" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Cerveza Imperial Lager 710ml</h4>
+                            <p class="precio ">$380  <span class="u-pull-right ">$350</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/sch.webp" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Cerveza Schneider Rubia 710ml</h4>
+                            <p class="precio ">280  <span class="u-pull-right ">$250</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/bud.webp" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Cerveza Budweiser 710ml</h4>      
+                        <p class="precio ">$430  <span class="u-pull-right ">$400</span></p>
+                        <a href="#" id="accionBoton" onclick="clickBoton()"  class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/coro.webp" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Cerveza Corona 710ml</h4>
+                            <p class="precio ">$450  <span class="u-pull-right ">$420</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/cc.webp" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Cerveza Corona 320ml</h4>     
+                            <p class="precio ">$350<span class="u-pull-right ">$320</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+    </div> 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
