@@ -169,19 +169,31 @@ function clickBoton(){
 }
 
 
+
+const btn = document.querySelector('#myBtn')
+ 
+btn.addEventListener('click', () => {
+
 btnSwal.onclick=()=>{
-    Swal.fire(
-    { 
-    title: 'Bienvenidoss!',
-    text: 'Aca tenemos todas las birras mas ricas',
-    imageUrl: 'https://lh3.googleusercontent.com/p/AF1QipMc2ruGOxcLNIKHvmebHT4PGpMSK3jlKWERKDob=w1080-h608-p-no-v0',
-    imageWidth: 400,
-    imageHeight: 200,
-    imageAlt: 'Custom image',
-    confirmButtonText: 'Pasar a ver',
-    position: 'top-center' 
+    Swal.fire({
+  icon: 'error',
+  title: 'Oops...',
+  text: 'Something went wrong!',
+  footer: '<a href="">Why do I have this issue?</a>'
+})
 
-}
-)
-}
 
+
+const options = {
+    method: 'GET',
+    headers: {
+        'X-RapidAPI-Key': '4cb957d721msh12a9893e29c9676p1c023bjsn5b85ae8c57a0',
+        'X-RapidAPI-Host': 'brianiswu-open-brewery-db-v1.p.rapidapi.com'
+    }
+};
+
+fetch('https://brianiswu-open-brewery-db-v1.p.rapidapi.com/breweries/search?query=cerveza', options)
+    .then(res=> res.json())
+    .then(response => {
+    console.log(response)
+})
